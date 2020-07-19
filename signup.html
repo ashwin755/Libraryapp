@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>library</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">LOGIN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="signup.html">SIGNUP</a>
+              </li>
+              
+            
+          </ul>
+         
+        </div>
+      </nav>
+     
+      <section>
+      <h1 class="head">Library</h1>
+      
+      </section>
+     
+
+     <!---- <div class="box2">-->
+        
+        <div class="container">
+          <div class="row">
+            <div class="col col-sm-4"></div>
+            <div class="col col-sm-4">
+             <form action="index.html" class="box2" onsubmit="return check();">
+               <h1>signup</h1>
+               <table>
+                <tr>
+                    <td><label>First Name</label></td>
+                    <td><label>Last Name</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="form-control" id="fname" required>
+                      
+                    <td><input type="text" class="form-control" id="lname" required>
+                   
+                </tr>
+                <tr><td><span id="nameerror"></span></td>
+                <td><span id="lerror"></span></td></tr>
+                <tr>
+                    <td><label>Date Of Birth</label></td> 
+                    <td><label>Email</label></td></tr>
+                  <tr>
+                  <td><input type="date" class="form-control" id="dob" required></td>
+                  
+                  <td><input type="email" class="form-control" id="emails" required>
+                    </td>
+              </tr>
+              <tr><td><span id="doberror"></span></td>
+                <td><span id="emailerror"></span></td></tr>
+              
+              <tr>
+                  <td><label>Contact No</label></td> 
+                    <td><label>Address</label></td></tr> 
+              </tr>
+              <tr>
+                <td><input type="text" class="form-control" id="phone" required></td>
+                
+                <td><input type="text" class="form-control" id="address" required>
+                  </td>
+            </tr>
+
+            <tr><td><span id="phoneerror"></span></td>
+                <td><span id="addresserror"></span></td></tr>
+            <tr>
+              <td><label>Password</label></td>
+              <td><label>Confirm Password</label></td>
+          </tr>
+         
+          <tr>
+            <td><input type="password" class="form-control" id="password" required onkeypress="passwordcheck();">
+              </td>
+             
+            <td><input type="password" class="form-control" id="cpassword" required></td>
+            </tr>
+            <tr><td>
+              <span id="passworderror"></span>
+              <!---->
+              <div id="myprogress">
+                <div id="mybar">0%</div>
+              </div>
+              <!---->
+            </td>
+              <td><span id="cpassworderror"></span></td></tr>
+        <tr>
+          <td><input type="reset" value="Cancel" onclick="resets();"></td>
+          <td><input type="submit" value="Sign Up"></td>
+        </tr>
+              <tr>
+                <td></td>
+                <!--<progress max="100" value="0" id="strengthBar" style="width:230px;">
+              </progress>-->
+              </tr>
+               </table>
+               <br>
+               <i class="fa fa-exclamation-circle" id="ex2" data-toggle="modal" data-target="#myModal">instructions</i>
+             
+        
+              
+             </form>
+       
+            </div>
+            <div class="col col-sm-4"></div>
+         </div>
+        
+      </div>
+      <div id="f1">
+        <f1>Follow Us</f1><br>
+        <f2><a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a></f2>
+        
+      </div>
+      <!--</div>-->
+      <script src="js/signup.js" type="text/javascript"></script>
+      
+                       <!--modal-->
+                       <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-md">
+                        
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 class="modal-title">Instructions</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                              <p><b>Password must conatin minimum five charcters with:<br>
+                                *at least one uppercase(A-Z),<br>
+                                *at least one lowercase(a-z) ,<br>
+                                *at least one number(0-9). </b></p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-dannger" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                       <!---->    
+      
+</body>
+</html>
